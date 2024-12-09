@@ -1,0 +1,10 @@
+.form-title{
+    color: var(--Marine-blue);
+    margin-bottom: 0.75rem;
+}
+
+.form-info{
+    margin: 0px 0px 0.75rem 0px;
+    font-size: 15px;
+    color: var(--Cool-gray);
+}

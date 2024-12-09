@@ -1,0 +1,30 @@
+.next-step-btn{
+    border: none;
+    background-color: var(--Marine-blue);
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: var(--Magnolia);
+    cursor: pointer;
+}
+
+.prev-step-btn{
+    background-color: var(--White);
+    border: none;
+    color: var(--Cool-gray);
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.step-navigation-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.step-navigation-container.only-next{
+    justify-content: flex-end;
+}
+
+.step-navigation-container.only-prev{
+    justify-content: flex-start;
+}

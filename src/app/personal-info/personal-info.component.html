@@ -1,7 +1,6 @@
-<div class="personal-info-container">
+<div class="stepper-content-container">
     <form>
-        <h2 class="personal-info-title">Personal info</h2>
-        <p class="personal-form-info">Please provide your name, email address and phone number.</p>
+        <app-form-header [headerTitle]="headerTitle" [headerInfo]="headerInfo"></app-form-header>
         <div class="form-control">
             <label for="name">Name</label>
             <input type="text" name="name" id="name" placeholder="e.g. Stephen King">
@@ -15,7 +14,5 @@
             <input type="text" name="phone" id="phone" placeholder="e.g. +1 234 567 890">
         </div>
     </form>
-    <div class="step-navigation-container">
-        <button class="next-step-btn">Next Step</button>
-    </div>
+    <app-form-stepper [stepperCount]="stepperCount"></app-form-stepper>
 </div>

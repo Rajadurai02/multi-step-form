@@ -1,1 +1,43 @@
-<p>plan works!</p>
+<div class="stepper-content-container">
+    <div class="plan-container">
+        <app-form-header [headerTitle]="headerTitle" [headerInfo]="headerInfo"></app-form-header>
+        <div class="plan-type-container">
+            <div class="plan-type-card">
+                <div class="plan-type-img-container">
+                    <img src="/images/icon-arcade.svg" alt="arcade">
+                </div>
+                <div class="plan-type-text-container">
+                    <p class="plan-name">Arcade</p>
+                    <p class="plan-amount">$9/mo</p>
+                </div>
+            </div>
+            <div class="plan-type-card">
+                <div class="plan-type-img-container">
+                    <img src="/images/icon-advanced.svg" alt="arcade">
+                </div>
+                <div class="plan-type-text-container">
+                    <p class="plan-name">Advanced</p>
+                    <p class="plan-amount">$912/mo</p>
+                </div>
+            </div>
+            <div class="plan-type-card">
+                <div class="plan-type-img-container">
+                    <img src="/images/icon-pro.svg" alt="arcade">
+                </div>
+                <div class="plan-type-text-container">
+                    <p class="plan-name">Pro</p>
+                    <p class="plan-amount">$15/mo</p>
+                </div>
+            </div>
+        </div>
+        <div class="plan-duration-container">
+            <span class="label monthly">Monthly</span>
+            <label class="toggle-switch">
+                <input type="checkbox" id="dark-mode-toggle">
+                <span class="slider"></span>
+            </label>
+            <span class="label yearly">Yearly</span>
+        </div>
+    </div>    
+    <app-form-stepper [stepperCount]="stepperCount"></app-form-stepper>
+</div>

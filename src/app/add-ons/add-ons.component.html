@@ -1,1 +1,45 @@
-<p>add-ons works!</p>
+<div class="stepper-content-container">
+    <div class="add-on-container">
+        <app-form-header [headerTitle]="headerTitle" [headerInfo]="headerInfo"></app-form-header>
+        <div class="add-on-card">
+            <label class="custom-checkbox" for="onlineServiceChk">
+                <input type="checkbox" id="onlineServiceChk">
+                <span class="checkmark"></span>
+            </label>
+            <div class="add-on-details">
+                <p class="add-on-name">Online service</p>
+                <p class="add-on-info">Access to multiplayer games</p>
+            </div>
+            <span class="add-on-amount">
+                +$10/yr
+            </span>
+        </div>
+        <div class="add-on-card">
+            <label class="custom-checkbox" for="largerStorageChk">
+                <input type="checkbox" id="largerStorageChk">
+                <span class="checkmark"></span>
+            </label>
+            <div class="add-on-details">
+                <p class="add-on-name">Larger storage</p>
+                <p class="add-on-info">Extra 1TB of cloud save</p>
+            </div>
+            <span class="add-on-amount">
+                +$20/yr
+            </span>
+        </div>
+        <div class="add-on-card">
+            <label class="custom-checkbox" for="custProfileChk">
+                <input type="checkbox" id="custProfileChk">
+                <span class="checkmark"></span>
+            </label>
+            <div class="add-on-details">
+                <p class="add-on-name">Customozable profile</p>
+                <p class="add-on-info">Custom theme on your profile</p>
+            </div>
+            <span class="add-on-amount">
+                +$20/yr
+            </span>
+        </div>
+    </div>
+    <app-form-stepper [stepperCount]="stepperCount"></app-form-stepper>
+</div>

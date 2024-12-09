@@ -15,3 +15,11 @@ body{
     font-family: 'Ubuntu', sans-serif;
     margin: 0px;
 }
+
+.stepper-content-container{
+    margin: 0px 20px;
+    display: flex;
+    height: 95%;
+    flex-direction: column;
+    justify-content: space-between;
+}
