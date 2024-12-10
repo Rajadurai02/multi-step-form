@@ -1,4 +1,7 @@
-<div class="step-navigation-container" [class.only-next]="stepperCount == 1" [class.only-prev]="stepperCount == 4">
-    <button *ngIf="stepperCount != 1" class="prev-step-btn">Go Back</button>
-    <button *ngIf="stepperCount != 4" class="next-step-btn">Next Step</button>
+<div class="step-navigation-container" [class.only-next]="stepperCount == 1">
+    <button *ngIf="stepperCount !== 1" class="prev-step-btn">Go Back</button>
+    <button *ngIf="stepperCount !== 4; else confirmBtn" class="next-step-btn">Next Step</button>
 </div>
+<ng-template #confirmBtn>
+    <button class="confirm-btn">Confirm</button>
+</ng-template>

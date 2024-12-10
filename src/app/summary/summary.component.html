@@ -1,1 +1,46 @@
-<p>summary works!</p>
+<div class="stepper-content-container" *ngIf="isFormSubmitted; else thankYou">
+    <app-form-header [headerTitle]="headerTitle" [headerInfo]="headerInfo"></app-form-header>
+    <div class="summary-container">
+        <div class="selected-services-container">
+            <div class="plan-container">
+                <div class="plan-change-container">
+                    <p class="plan-name">Arcade (Monlthy)</p>
+                    <a>Change</a>
+                </div>
+                <span class="plan-service-amount">
+                    $9/mo
+                </span>
+            </div>
+            <hr>
+            <div class="other-services-container">
+                <span class="other-service-name">
+                    Online service
+                </span>
+                <span class="other-service-amount">
+                    +$1/mo
+                </span>
+            </div>
+            <div class="other-services-container">
+                <span class="other-service-name">
+                    Larger storage
+                </span>
+                <span class="other-service-amount">
+                    +$2/mo
+                </span>
+            </div>
+        </div>
+        <div class="total-amount-container">
+            <span class="total-service-name">
+                total (per month)
+            </span>
+            <span class="total-service-amount">
+                +$12/mo
+            </span>
+        </div>
+    </div>
+    <app-form-stepper [stepperCount]="stepperCount"></app-form-stepper>
+</div>
+
+<ng-template #thankYou>
+    <app-thank-you></app-thank-you>
+</ng-template>

@@ -53,8 +53,37 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
+  cursor: pointer;
+}
+
+.add-on-card:has(input:checked), .add-on-card:hover {
+  border: 1px solid var(--Purplish-blue);
+  background-color: var(--Alabaster);
 }
 
 .add-on-details{
     flex: 1;
+    margin: 10px 0px;
+}
+
+.add-on-details p{
+  margin: 10px 0px;
+  font-size: 16px;  
+}
+
+.add-on-name{
+  color: var(--Marine-blue);
+  font-weight: 700;
+}
+
+.add-on-info{
+  color: var(--Cool-gray);
+  font-weight: 500;
+}
+
+.add-on-amount{
+  color: var(--Purplish-blue);
+  font-size: 16px;
+  font-weight: 500;
+  margin: 10px 20px;
 }

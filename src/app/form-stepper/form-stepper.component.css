@@ -7,6 +7,15 @@
     cursor: pointer;
 }
 
+.confirm-btn{
+    border: none;
+    background-color: var(--Purplish-blue);
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: var(--Magnolia);
+    cursor: pointer;
+}
+
 .prev-step-btn{
     background-color: var(--White);
     border: none;
